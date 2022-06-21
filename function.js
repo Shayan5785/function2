@@ -16,7 +16,15 @@ const findWhichEnd  = (word,letter) => {
     }
 }
 
+//3rd function
+const countAbove = (number,limit) => {
+    let i = 0 
+    number.forEach(item => Math.abs(item) >= limit ? i++ : null)
+    return i;
+}
+
 module.exports = {
     isEven,
     findWhichEnd,
+    countAbove,
 }
